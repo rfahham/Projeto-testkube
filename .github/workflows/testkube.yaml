@@ -1,0 +1,17 @@
+name: Trigger the 'globo' Test Workflow on Testkube
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: kubeshop/setup-testkube@v1
+      with:
+        organization: tkcorg_ebb046d67b39d002
+        environment: tkcenv_de6d1c5feb23216b
+        token: ${{ secrets.TK_API_TOKEN }}
+    - run: |
+        testkube run testworkflow globo -f
