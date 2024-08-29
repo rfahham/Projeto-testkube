@@ -50,3 +50,21 @@ testkube-minio-testkube-68947fcb4-6f2c6                 2m           88Mi
 testkube-nats-0                                         2m           15Mi
 testkube-operator-controller-manager-5bfb69557d-t5zqc   3m           32Mi
 ```
+
+## Consumo pré execução do teste
+
+<div align="center">
+
+![Resultado depois da alteração](./images/kubernetes/pre-teste.png)
+
+</div>
+
+## Consumo durante execução do teste
+
+<div align="center">
+
+![Resultado depois da alteração](./images/kubernetes/durante-teste.png)
+
+</div>
+
+Próximos passos... [Métricas com Prometheus e Grafana](../prometheus-grafana-eks/README.md)

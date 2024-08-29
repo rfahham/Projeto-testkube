@@ -1,4 +1,4 @@
-# Install
+# TESTKUBE
 
 As execuções de testes são sempre realizadas dentro do seu cluster K8s
 
@@ -31,37 +31,55 @@ Para a experiência completa do Testkube, incluindo o Dashboard e todas as funci
 > Informação
 Por que uma licença é necessária? Obter uma licença gratuita nos ajuda a garantir que você tenha uma instalação e experiência de produto ideais com o Testkube. Não se preocupe - você não terá que falar com um representante de vendas ou inserir detalhes de cartão de crédito para começar - mas se precisar de nossa ajuda, estaremos muito mais bem preparados!
 
+## Instalação no Ubuntu
+
+```bash
+wget -qO - https://repo.testkube.io/key.pub | sudo apt-key add -
+echo "deb https://repo.testkube.io/linux linux main" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install -y testkube
+```
+
+## Instalação no MacOS
+
+```bash
+brew install testkube
+```
+
+## Download Manual
+
+1. Baixe o binário para a versão e plataforma de sua escolha [aqui](https://github.com/kubeshop/testkube/releases).
+
+2. Descompacte-o. Por exemplo, no Linux use:
+```bash
+tar -zxvf testkube_1.5.1_Linux_x86_64.tar.gz.
+```
+
+3. Mova-o para um local no PATH. Por exemplo:
+
+```bash
+mv  testkube_1.5.1_Linux_x86_64/kubectl-testkube /usr/local/bin/kubectl-testkube
+```
+
+## Verificando a versão do 
+
 ```bash
 testkube version
 
 Context:  (2.1.3)   Namespace: testkube
----------------------------------------
-
-████████ ███████ ███████ ████████ ██   ██ ██    ██ ██████  ███████ 
-   ██    ██      ██         ██    ██  ██  ██    ██ ██   ██ ██      
-   ██    █████   ███████    ██    █████   ██    ██ ██████  █████   
-   ██    ██           ██    ██    ██  ██  ██    ██ ██   ██ ██      
-   ██    ███████ ███████    ██    ██   ██  ██████  ██████  ███████ 
-                                           /tɛst kjub/ by Kubeshop
-
-
-Client Version 2.1.3
-Server Version 2.1.2
-Commit 64a8049fc93613922a6be7d6de62a9d80a28fdd5
-Built by goreleaser
-Build date 2024-08-26T12:48:25Z
 ```
 
+## O instalador concluirá estas etapas:
 
-testkube init
+- Verifique se você escolheu o ambiente Kubernetes certo.
+- Peça algumas informações, como a licença solicitada anteriormente.
+- Instale o plano de controle e o agente do Testkube, ambos no mesmo namespace.
 
-http://localhost:8088/
-
+Todo o processo leva de 3 a 5 minutos e pode ser iniciado com o seguinte comando:
 
 ```bash
 testkube init demo
 
-testkube init
 
 ████████ ███████ ███████ ████████ ██   ██ ██    ██ ██████  ███████ 
    ██    ██      ██         ██    ██  ██  ██    ██ ██   ██ ██      
@@ -92,7 +110,9 @@ Make sure to copy these credentials now as you will not be able to see this agai
 
 ```
 
-Uma vez instalado, você será perguntado se deseja testkube dashboardacessar convenientemente todos os serviços relevantes no seu localhost. Você sempre pode executar isso você mesmo depois, caso feche este terminal após a instalação. O administrador nesta demonstração tem o seguinte e-mail e senha: admin@example.com/password.
+Uma vez instalado, você será perguntado se deseja testkube dashboard acessar convenientemente todos os serviços relevantes no seu localhost. 
+
+Você sempre pode executar isso você mesmo depois, caso feche este terminal após a instalação. 
 
 Bons testes!
 

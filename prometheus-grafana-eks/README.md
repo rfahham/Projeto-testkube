@@ -1,4 +1,4 @@
-# Monitorando o CLuster
+# Monitorando saúde do CLuster
 
 Utilizando o Prometheus e o Grafana
 
@@ -105,3 +105,5 @@ $ kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
 ```shell
 $ kubectl --namespace monitoring port-forward svc/grafana 3000
 ```
+
+Remover o cluster
