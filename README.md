@@ -39,4 +39,4 @@ Integração com Ferramentas de GITOPS
 - Argo
 - Gitlab
 
-Próximo passo... [Requisitos para Instalação](./docs/requisitos.md)
+Próximo passo... [Requisitos para Instalação](./docs/pre-requisitos.md)

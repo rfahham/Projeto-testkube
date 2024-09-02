@@ -73,5 +73,5 @@ kubectl get pods
 No resources found in default namespace.
 ```
 
-Próximo passo...[Instalar o Helm](helm.md)
+Próximo passo... [Instalar o Helm](../helm/helm.md)
 

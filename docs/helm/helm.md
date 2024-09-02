@@ -8,9 +8,11 @@ O Helm agora tem um script de instalação que automaticamente pegará a versão
 - https://helm.sh/docs/intro/install/
 
 ```bash
+mkdir helm && cd helm
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
 ./get_helm.sh
+cd ..
 ```
 Verificando a versão
 
@@ -20,4 +22,4 @@ helm version
 version.BuildInfo{Version:"v3.15.4", GitCommit:"fa9efb07d9d8debbb4306d72af76a383895aa8c4", GitTreeState:"clean", GoVersion:"go1.22.6"}
 ```
 
-Próximo passo...[Instalar o Testkube](testkube.md)
+Próximo passo... [Instalar o Testkube](../testkube/testkube.md)

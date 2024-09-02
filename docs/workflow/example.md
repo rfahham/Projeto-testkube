@@ -1,3 +1,17 @@
+# Start from an example
+
+O testkube fornecerá um `Spec` como exemplo para o teste
+
+<div align="center">
+
+![Example](./images/example.png)
+
+</div>
+
+
+## Content do exemplo
+
+```bash
 kind: TestWorkflow
 apiVersion: testworkflows.testkube.io/v1
 metadata:
@@ -32,3 +46,10 @@ spec:
       artifacts:
         paths:
           - k6-test-report.html
+```
+
+<div align="center">
+
+![Example](./images/example-result.png)
+
+</div>

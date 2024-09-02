@@ -34,10 +34,12 @@ Por que uma licença é necessária? Obter uma licença gratuita nos ajuda a gar
 ## Instalação no Ubuntu
 
 ```bash
+mkdir testkube && cd testkube
 wget -qO - https://repo.testkube.io/key.pub | sudo apt-key add -
 echo "deb https://repo.testkube.io/linux linux main" | sudo tee -a /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install -y testkube
+cd ..
 ```
 
 ## Instalação no MacOS
@@ -116,4 +118,4 @@ Você sempre pode executar isso você mesmo depois, caso feche este terminal ap�
 
 Bons testes!
 
-Próximos passo...[Configurando o primeiro teste com Testkube](config.md)
+Próximos passo... [Configurando o primeiro teste com Testkube](../config.md)
