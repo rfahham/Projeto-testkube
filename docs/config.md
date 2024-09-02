@@ -56,3 +56,4 @@ Podemos criar um workflow de algumas maneiras diferentes
 - [Import from YAML](../docs/workflow/from-yaml.md)
 - [Change Workflow](../docs/testkube/change-workflow.md)
 - [Verificando consumo do Cluster](../prometheus-grafana-eks/consumo.md)
+- [Create a K6 Distributed Test Workflow](../docs/workflow/distributed.md)

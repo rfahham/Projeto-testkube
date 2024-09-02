@@ -79,38 +79,11 @@ Context:  (2.1.3)   Namespace: testkube
 
 Todo o processo leva de 3 a 5 minutos e pode ser iniciado com o seguinte comando:
 
-```bash
-testkube init demo
+<div align="center">
 
+![testkube init demo](../testkube/testkube-init-demo.png)
 
-████████ ███████ ███████ ████████ ██   ██ ██    ██ ██████  ███████ 
-   ██    ██      ██         ██    ██  ██  ██    ██ ██   ██ ██      
-   ██    █████   ███████    ██    █████   ██    ██ ██████  █████   
-   ██    ██           ██    ██    ██  ██  ██    ██ ██   ██ ██      
-   ██    ███████ ███████    ██    ██   ██  ██████  ██████  ███████ 
-                                           /tɛst kjub/ by Kubeshop
-
-
-Welcome to the installer for Testkube On-Prem demo.
-
-Enter namespace for this installation: testkube
-Enter license key: XXXXXX-XXXXXX-XXXXXX-XXXXXX-XXXXXX
-
-Installation is about to start and may take a several minutes:
-
-- Testkube will be installed in the k3d-mycluster context.
-- Testkube services will be applied to the testkube namespace.
-- Testkube CRDs and cluster roles will be applied to your cluster.
-
-Do you want to continue [Y/n]: Yes
-
- ⠦  Installing Testkube On-Prem Demo... (19s)
-
- ✅  Installing Testkube On-Prem Demo...                                             
-The default admin credentials are: admin@example.com / password
-Make sure to copy these credentials now as you will not be able to see this again.
-
-```
+</div>
 
 Uma vez instalado, você será perguntado se deseja testkube dashboard acessar convenientemente todos os serviços relevantes no seu localhost. 
 
